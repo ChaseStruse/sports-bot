@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import BotMessage from '../components/bot-message'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
         <h1>Sports Bot App</h1>
         <div className={styles.screen}>
           <div className={styles.botText}>
-            <p>Example bot text...</p>
+            <BotMessage userSelection='Test User Selection'/>
           </div>
           <div className={styles.userInput}>
             <input type="text" id="userInput" name="userInput" />
